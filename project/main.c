@@ -1,9 +1,12 @@
 #include <msp430.h>
-#include "libTimer.h"
+#include "../demos/timerLib/libTimer.h"
+#include "clocksTimer.h"
+#include "../demos/timerLib/sr.h"
 #include "switches.h"
 #include "led.h"
+//#include "sr.h"
 
-void main(void){
+int main(){
 
   configureClocks();
   switch_init();
