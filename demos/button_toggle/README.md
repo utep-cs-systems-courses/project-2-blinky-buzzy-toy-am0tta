@@ -1,28 +1,26 @@
-## Description
-This program uses interrupts to detect when a switch is pressed or
-released.
+# Project 2: Blinky-Buzzy Toy
 
-Press S1, and the green LED is illuminated.  Release it, and the red
-LED is illuminated instead.
+## Overview
+The objective is to use the MSP430 Microcontroller to design a toy, by
+utilizing the four switches, the two LED's, and the speaker.
 
-## Exploration
-_LED toggle:_  A great initial project would be to modify this program to
-implement a state machine that "toggled" between the red and green LEDs
-each time the button is pressed. The LED should remain illuminated until
-the next time the button is pressed.
+## How to Use the Program:
+To compile the program type **make all** and to run it type **make load**. To
+clean the repo simply type **make clean**.
 
-_Separation of duties:_ Input and output are not always so closely
-connected.  Frequently an input begins a computation that eventually
-results in an output. For example, pressing "next song" on a streaming
-audio player begins a complicated multi-stage process that eventually
-results in a different song being played.  Suggestion: start with
-something simple such as responding to the buttons using interrupts to
-set state variables, and update the LEDs when the timer interrupt
-occurs.  
+* Switch 1 generates sounds that go from a low frequency to a high frequency.
+* Switch 2 dims the green LED and brightly illuminates the red LED.
+  It also mutes any tones produced by the speaker.
+* Switches 3 and 4 produce a different tone.
 
-_Time and button interaction:_
-Integrate the timer mechanisms from the blink demo and have the button affect the blink sequence.
+## Feedback by Teaching Team/ Breakout Groups/ Lab Sessions
+1. Play with the demos to see how they behave
+2. Migrate the contents of demos' directories to new directories to keep the
+orignal code intact.
+3.
 
-## Some Advice
-When creating your own variants to the demo programs,
-it's probably a good idea to keep a copy of the original program (or really understand how _git checkout_ works).  
+## Shortcoming(s)
+1. My program was not compiling in the project directory. Therefore, I
+included it in a directory named **button_toggle** that can be found in the
+demos directory.
+
