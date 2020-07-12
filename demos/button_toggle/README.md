@@ -17,7 +17,7 @@ clean the repo simply type **make clean**.
 1. Play with the demos to see how they behave
 2. Migrate the contents of demos' directories to new directories to keep the
 orignal code intact.
-3.
+3. Keep the state machine simple
 
 ## Shortcoming(s)
 1. My program was not compiling in the project directory. Therefore, I
