@@ -11,13 +11,4 @@ if (P1IFG & SWITCHES) {	      /* did a button cause this interrupt? */
 
  }
 }
-/*
-void
-___interrupt_vec(WDT_VECTOR) WDT(){
-  static char blink_count = 0;
-  if(++blink_count == 125){
-    state_advance();
-    blink_count = 0;
-  }
-  }*/
 

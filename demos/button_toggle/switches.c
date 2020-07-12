@@ -81,16 +81,5 @@ switch_interrupt_handler()
   switch_state_down = (p1val & SW1) ? 0 : 1; /* 0 when SW1 is up */
   switch_state_changed = 1;
   led_update();
-  // *char p1val = switch_update_interrupt_sense1();
-  //switch (toggle_state){
-
-    //case 1:                     // led off button up
-    //if(!(p1val & SW1))       // button is now down
-      // toggle_state = 2;      // new state = led on button down
-    //break;
-    //case 2:
-
-    // case 3:
-    //case 4:*/
 
 }
